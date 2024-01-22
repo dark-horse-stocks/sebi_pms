@@ -509,7 +509,7 @@ def add_new_investment_data(year,month):
 
 # For SEBI-Portfolio-Manager-General-Information.xlsx
 # Add Sep Data for the general innformation
-# df = add_new_general_information_data(2023,'Sep')
+# df = add_new_portfolio_manager_data(2023,'Sep')
 # df.to_excel('SEBI-Portfolio-Manager-General-Information.xlsx')
 
 # For SEBI-Portfolio-Manager-Particulars.xlsx
