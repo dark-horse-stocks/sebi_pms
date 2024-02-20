@@ -505,19 +505,22 @@ def add_new_investment_data(year,month):
 
   return df
 
-#Examples
+#Functions
 
 # For SEBI-Portfolio-Manager-General-Information.xlsx
 # Add Sep Data for the general innformation
-# df = add_new_portfolio_manager_data(2023,'Sep')
-# df.to_excel('SEBI-Portfolio-Manager-General-Information.xlsx')
+def portfolio_manager_data(year, month):
+    df = add_new_portfolio_manager_data(year,month)
+    df.to_excel('SEBI-Portfolio-Manager-General-Information.xlsx')
 
 # For SEBI-Portfolio-Manager-Particulars.xlsx
 # Add Sep Data for the Particulars
-# df = add_new_particulars_data(2023,'Sep')
-# df.to_excel('SEBI-Portfolio-Manager-Particulars.xlsx')
+def particulars_data(year, month):
+    df = add_new_particulars_data(year, month)
+    df.to_excel('SEBI-Portfolio-Manager-Particulars.xlsx')
 
 # For SEBI-Portfolio-Manager-Investment-Approach.xlsx
 # Add Sep Data for the Investment
-# df = add_new_investment_data(2023,'Sep')
-# df.to_excel('SEBI-Portfolio-Manager-Investment-Approach.xlsx')
+def investment_data(year, month):
+    df = add_new_investment_data(year, month)
+    df.to_excel('SEBI-Portfolio-Manager-Investment-Approach.xlsx')
